@@ -1,0 +1,36 @@
+{
+	"name": "ds_ingest_Json_lookup",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_ingest_raw_data",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "lookdata.json",
+				"folderPath": "lookup_values",
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"schema": {
+					"type": "string"
+				},
+				"table": {
+					"type": "string"
+				},
+				"cdc_col": {
+					"type": "string"
+				},
+				"from_date": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
