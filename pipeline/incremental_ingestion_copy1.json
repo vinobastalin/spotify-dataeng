@@ -321,32 +321,32 @@
 				"type": "array",
 				"defaultValue": [
 					{
-						"schema": "bronze",
+						"schema": "dbo",
 						"table": "DimUser",
 						"cdc_col": "updated_at",
 						"from_date": ""
 					},
 					{
-						"schema": "bronze",
+						"schema": "dbo",
 						"table": "DimArtist",
 						"cdc_col": "updated_at",
 						"from_date": ""
 					},
 					{
-						"schema": "bronze",
+						"schema": "dbo",
 						"table": "DimDate",
 						"cdc_col": "updated_at",
 						"from_date": ""
 					},
 					{
-						"schema": "bronze",
+						"schema": "dbo",
 						"table": "DimTrack",
 						"cdc_col": "updated_at",
 						"from_date": ""
 					},
 					{
-						"schema": "bronze",
-						"table": "FactStream",
+						"schema": "dbo",
+						"table": "FaceStream",
 						"cdc_col": "updated_at",
 						"from_date": ""
 					}
