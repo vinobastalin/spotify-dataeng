@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "datafactory-spotify-project-pct"
+		},
+		"ls_adls_ingest_raw_data_accountKey": {
+			"value": ""
+		},
+		"ls_azsql_ingest_raw_data_password": {
+			"value": ""
+		},
+		"ls_adls_ingest_raw_data_properties_typeProperties_url": {
+			"value": "https://strgaccspotify.dfs.core.windows.net/"
+		},
+		"ls_azsql_ingest_raw_data_properties_typeProperties_server": {
+			"value": "az-sql-server-spotify.database.windows.net"
+		},
+		"ls_azsql_ingest_raw_data_properties_typeProperties_database": {
+			"value": "azsqlspotify"
+		},
+		"ls_azsql_ingest_raw_data_properties_typeProperties_userName": {
+			"value": "adminvs"
+		}
+	}
+}
